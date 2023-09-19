@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wine_bottles",
+  "info": {
+    "singularName": "wine-bottle",
+    "pluralName": "wine-bottles",
+    "displayName": "WineBottle"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Video": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Region": {
+      "type": "string"
+    },
+    "Cuvee": {
+      "type": "string"
+    },
+    "Year": {
+      "type": "integer"
+    },
+    "Type": {
+      "type": "string"
+    },
+    "Color": {
+      "type": "string"
+    },
+    "QrCodeUrl": {
+      "type": "string"
+    }
+  }
+}

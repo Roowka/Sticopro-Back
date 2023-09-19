@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "etablissements",
+  "info": {
+    "singularName": "etablissement",
+    "pluralName": "etablissements",
+    "displayName": "Etablissement"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Photo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Adresse": {
+      "type": "string"
+    },
+    "PhoneNumber": {
+      "type": "string"
+    },
+    "WebSite": {
+      "type": "string"
+    }
+  }
+}
