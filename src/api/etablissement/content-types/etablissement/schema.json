@@ -45,6 +45,12 @@
     },
     "WebSite": {
       "type": "string"
+    },
+    "wine_bottles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::wine-bottle.wine-bottle",
+      "mappedBy": "etablissement"
     }
   }
 }
