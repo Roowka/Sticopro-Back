@@ -4,7 +4,8 @@
   "info": {
     "singularName": "etablissement",
     "pluralName": "etablissements",
-    "displayName": "Etablissement"
+    "displayName": "Etablissement",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,24 +16,26 @@
       "type": "string"
     },
     "Logo": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "Photo": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "Email": {
       "type": "email"
@@ -45,6 +48,12 @@
     },
     "WebSite": {
       "type": "string"
+    },
+    "bottles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::wine-bottle.wine-bottle",
+      "mappedBy": "etablissement"
     }
   }
 }

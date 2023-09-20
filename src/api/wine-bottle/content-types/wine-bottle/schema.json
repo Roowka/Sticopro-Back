@@ -4,7 +4,8 @@
   "info": {
     "singularName": "wine-bottle",
     "pluralName": "wine-bottles",
-    "displayName": "WineBottle"
+    "displayName": "Bottle",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,14 +16,15 @@
       "type": "string"
     },
     "Video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "Description": {
       "type": "text"
@@ -44,6 +46,18 @@
     },
     "QrCodeUrl": {
       "type": "string"
+    },
+    "reviews": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::review.review",
+      "mappedBy": "bottle"
+    },
+    "etablissement": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::etablissement.etablissement",
+      "inversedBy": "bottles"
     }
   }
 }

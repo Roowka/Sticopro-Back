@@ -4,7 +4,8 @@
   "info": {
     "singularName": "review",
     "pluralName": "reviews",
-    "displayName": "Review"
+    "displayName": "Review",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,6 +20,12 @@
     },
     "Pseudo": {
       "type": "string"
+    },
+    "bottle": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::wine-bottle.wine-bottle",
+      "inversedBy": "reviews"
     }
   }
 }
