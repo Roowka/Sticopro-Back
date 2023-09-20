@@ -8,14 +8,16 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "test-base": "node ./test-base.js"
+    "test-start": "ENV_PATH=./custom.env npm run develop; node ./test-base.js"
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.13.6",
-    "@strapi/plugin-users-permissions": "4.13.6",
     "@strapi/plugin-i18n": "4.13.6",
-    "better-sqlite3": "8.6.0"
+    "@strapi/plugin-users-permissions": "4.13.6",
+    "@strapi/strapi": "4.13.6",
+    "better-sqlite3": "8.6.0",
+    "strapi-paypal": "^1.1.0",
+    "strapi-stripe": "^3.4.1"
   },
   "author": {
     "name": "A Strapi developer"
