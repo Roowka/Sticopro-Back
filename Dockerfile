@@ -6,7 +6,8 @@ ENV NODE_ENV=${NODE_ENV}
 
 WORKDIR /opt/
 COPY package.json yarn.lock ./
-RUN yarn config set network-timeout 600000 -g && yarn install
+
+RUN npm install
 
 WORKDIR /opt/app
 COPY . .
