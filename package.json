@@ -16,6 +16,7 @@
     "@strapi/provider-upload-aws-s3": "^4.13.6",
     "@strapi/strapi": "4.13.6",
     "better-sqlite3": "8.6.0",
+    "mysql": "^2.18.1",
     "strapi-paypal": "^1.1.0",
     "strapi-stripe": "^3.4.1"
   },
