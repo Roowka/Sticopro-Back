@@ -1,0 +1,11 @@
+{
+  "production": {
+    "username": "sticoproadmin",
+    "password": "Pa$$w0rd",
+    "database": "sticopro",
+    "host": "db4free.net",
+    "path": "/phpMyAdmin",
+    "port":3306,
+    "dialect": "mysql"
+  }
+}
