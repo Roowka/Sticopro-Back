@@ -4,7 +4,8 @@
   "info": {
     "singularName": "qr-code-bottle",
     "pluralName": "qr-code-bottles",
-    "displayName": "QrCodeBottle"
+    "displayName": "QrCodeBottle",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,11 +15,8 @@
     "code": {
       "type": "string"
     },
-    "wine_bottle": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::wine-bottle.wine-bottle",
-      "inversedBy": "qr_code_bottles"
+    "wineBottleId": {
+      "type": "string"
     }
   }
 }
