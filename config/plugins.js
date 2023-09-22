@@ -19,4 +19,9 @@ module.exports = ({ env }) => ({
       },
     },
   },
+  plausible: {
+    config: {
+      sharedLink: env("PLAUSIBLE_SHARED_LINK")
+    }
+  }
 });
