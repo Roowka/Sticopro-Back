@@ -63,12 +63,6 @@
       "allowedTypes": [
         "images"
       ]
-    },
-    "qr_code_bottles": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::qr-code-bottle.qr-code-bottle",
-      "mappedBy": "wine_bottle"
     }
   }
 }

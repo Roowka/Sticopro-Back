@@ -1,0 +1,13 @@
+{
+    "routes": [
+      {
+        "method": "GET",
+        "path": "/wine-bottles",
+        "handler": "wine-bottle.find",
+        "config": {
+          "policies": []
+        }
+      }
+    ]
+  }
+  
